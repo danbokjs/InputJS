@@ -251,14 +251,14 @@ document.body.addEventListener("keyup", function(e) {
 })
 document.body.addEventListener("mousemove", function(e) {
 
-    if (mouse.ignore) return;
+    if (Input.mouse.ignore) return;
 
     Input.mouse.x = e.clientX;
     Input.mouse.y = e.clientY;
 })
 document.body.addEventListener("mousedown", function(e) {
 
-    if (mouse.ignore) return;
+    if (Input.mouse.ignore) return;
 
     if (e.which == 3) {
         Input.mouse.isctxup = false;
@@ -282,7 +282,7 @@ document.body.addEventListener("mousedown", function(e) {
 })
 document.body.addEventListener("mouseup", function(e) {
 
-    if (mouse.ignore) return;
+    if (Input.mouse.ignore) return;
 
     if (e.which == 3) {
         Input.mouse.isctxdown = false;
